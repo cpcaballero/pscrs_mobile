@@ -1,9 +1,81 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>surgical-videos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false">
+        <ion-icon color="primary" src="./assets/system/icons/menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="show_profile()">
+        <ion-icon style="font-size: 2em;" color="primary" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="ios">
+      <img width="30em" src="./assets/icon/pscrs_logo.png">
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<ion-content>
+  <ion-text>
+    <h4 class="ion-margin-start">Surgical Videos</h4>
+  </ion-text>
+
+  <ion-item class="ion-no-padding">
+    <ion-card-content>
+      <img width="100%" src="/assets/shapes.svg">
+      <ion-grid class="ion-no-padding ion-no-margin">
+        <ion-row>
+          <ion-col size="12">
+            <h2>
+              <strong>Title</strong>
+            </h2>
+            <small>Date</small>
+            <ion-avatar>
+              <ion-icon style="font-size: 2em;" color="primary" name="person-circle-outline"></ion-icon>
+            </ion-avatar>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sagittis libero. Donec a dolor nisl.
+              Phasellus bibendum leo a est ultrices, non interdum justo consectetur.</p>
+          </ion-col>
+          <ion-col size="12">
+            <ion-button (click)="onClick()" size="small" color="medium">
+              Rate this video
+            </ion-button>
+            <ion-button (click)="onClick()" size="small" color="medium">
+              Send us feedback
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-item>
+  <ion-item class="ion-no-padding">
+    <ion-card-content>
+      <img width="100%" src="/assets/shapes.svg">
+      <ion-grid class="ion-no-padding ion-no-margin">
+        <ion-row>
+          <ion-col size="12">
+            <h2>
+              <strong>Title</strong>
+            </h2>
+            <small>Date</small>
+            <ion-avatar>
+              <ion-icon style="font-size: 2em;" color="primary" name="person-circle-outline"></ion-icon>
+            </ion-avatar>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sagittis libero. Donec a dolor nisl.
+              Phasellus bibendum leo a est ultrices, non interdum justo consectetur.</p>
+          </ion-col>
+          <ion-col size="12">
+            <ion-button (click)="onClick()" size="small" color="medium">
+              Rate this video
+            </ion-button>
+            <ion-button (click)="onClick()" size="small" color="medium">
+              Send us feedback
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-item>
 </ion-content>

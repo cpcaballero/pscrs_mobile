@@ -1,9 +1,108 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>dashboard</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false">
+        <ion-icon color="primary" src="./assets/system/icons/menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="show_profile()">
+        <ion-icon style="font-size: 2em;" color="primary" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="ios">
+      <img width="30em" src="./assets/icon/pscrs_logo.png">
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+
+  <ion-grid fixed>
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_surgical()">
+          <img width="80%" src="assets/system/images/surgical.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Surgical Videos</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_lectures()">
+          <img width="80%" src="assets/system/images/lecture.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Lectures</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_news()">
+          <img width="80%" src="assets/system/images/news.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Tech News</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_market()">
+          <img width="80%" src="assets/system/images/market.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Marketplace</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_expert()">
+          <img width="80%" src="assets/system/images/expert.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Ask The Experts</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_about()">
+          <img width="80%" src="assets/system/images/about.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>About PSCRS</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_profile()">
+          <img width="80%" src="assets/system/images/profile.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Profile Settings</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_connect()">
+          <img width="80%" src="assets/system/images/connect.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Connect with Us</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="ion-text-center ion-padding ion-no-margin" (click)="show_feedback()">
+          <img width="80%" src="assets/system/images/feedback.png" alt="">
+          <ion-card-content class="ion-no-padding">
+            <p>Feedback & Suggestions</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

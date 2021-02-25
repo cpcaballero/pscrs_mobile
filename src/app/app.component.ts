@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Dashboard', url: 'member/dashboard', icon: 'mail' },
+    { title: 'Surgical Videos', url: 'member/surgical-videos', icon: 'mail' },
+    { title: 'Instructional Lectures', url: 'member/lectures', icon: 'mail' },
+    { title: 'Technology News', url: 'member/tech-news', icon: 'mail' },
+    { title: 'Marketplace', url: 'member/marketplace', icon: 'mail' },
+    { title: 'Ask The Experts', url: 'member/experts', icon: 'mail' },
+    { title: 'About PSCRS', url: 'member/about-pscrs', icon: 'mail' },
+    { title: 'Profile Settings', url: 'member/profile-settings', icon: 'mail' },
+    { title: 'Feedback & Suggestions', url: 'member/feedbacks', icon: 'mail' },
+    { title: 'Connect with Us', url: 'member/connect', icon: 'mail' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }

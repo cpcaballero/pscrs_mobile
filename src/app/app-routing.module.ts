@@ -4,12 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'member/dashboard',
     pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: 'login',
@@ -24,31 +20,31 @@ const routes: Routes = [
     loadChildren: () => import('./public/forgot/forgot.module').then( m => m.ForgotPageModule)
   },
   {
-    path: 'dashboard',
+    path: 'member/dashboard',
     loadChildren: () => import('./member/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
   {
-    path: 'surgical-videos',
+    path: 'member/surgical-videos',
     loadChildren: () => import('./member/surgical-videos/surgical-videos.module').then( m => m.SurgicalVideosPageModule)
   },
   {
-    path: 'lectures',
+    path: 'member/lectures',
     loadChildren: () => import('./member/lectures/lectures.module').then( m => m.LecturesPageModule)
   },
   {
-    path: 'tech-news',
+    path: 'member/tech-news',
     loadChildren: () => import('./member/tech-news/tech-news.module').then( m => m.TechNewsPageModule)
   },
   {
-    path: 'marketplace',
+    path: 'member/marketplace',
     loadChildren: () => import('./member/marketplace/marketplace.module').then( m => m.MarketplacePageModule)
   },
   {
-    path: 'about-pscrs',
+    path: 'member/about-pscrs',
     loadChildren: () => import('./member/about-pscrs/about-pscrs.module').then( m => m.AboutPscrsPageModule)
   },
   {
-    path: 'contact-us',
+    path: 'member/contact-us',
     loadChildren: () => import('./public/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
   },
   {
@@ -60,16 +56,20 @@ const routes: Routes = [
     loadChildren: () => import('./public/initial/initial.module').then( m => m.InitialPageModule)
   },
   {
-    path: 'experts',
+    path: 'member/experts',
     loadChildren: () => import('./member/experts/experts.module').then( m => m.ExpertsPageModule)
   },
   {
-    path: 'profile-settings',
+    path: 'member/profile-settings',
     loadChildren: () => import('./member/profile-settings/profile-settings.module').then( m => m.ProfileSettingsPageModule)
   },
   {
-    path: 'feedbacks',
+    path: 'member/feedbacks',
     loadChildren: () => import('./member/feedbacks/feedbacks.module').then( m => m.FeedbacksPageModule)
+  },
+  {
+    path: 'member/connect',
+    loadChildren: () => import('./member/connect/connect.module').then( m => m.ConnectPageModule)
   }
 ];
 
