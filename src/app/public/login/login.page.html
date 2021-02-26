@@ -1,9 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="height:100vh;">
+  <ion-card>
+    <div class="ion-margin">
+      <ion-grid fixed id="logo_grid">
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="4">
+            <img width="100%" src="/assets/system/images/about.png" alt="" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
 
-<ion-content>
+    <form [formGroup]="LoginForm" (ngSubmit)="login()">
+      <!-- <ion-list> -->
+      <ion-item class="ion-margin input-border">
+        <ion-input placeholder="Enter your email" name="email" clear-input inputmode="email" formControlName="email">
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="ion-margin input-border">
+        <ion-input placeholder="Enter your password" name="password" type="password" inputmode="text" clear-input
+          formControlName="password">
+        </ion-input>
+      </ion-item>
+
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="6" class="ion-padding-start">
+            <ion-text class="ion-align-items-center" (click)="show_forgot()"><small>Forgot
+                Password?</small>
+            </ion-text>
+          </ion-col>
+          <ion-col size="6" class="ion-padding-start">
+            <ion-text class="ion-align-items-center" (click)="show_signup()"><small>No account yet? Sign up here.</small>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-button (click)="login()" style="margin-top:5vh; margin-bottom:5vh;" class="ion-margin" color="primary"
+        expand="block">
+        <ion-text color="light">LOGIN</ion-text>
+      </ion-button>
+
+    </form>
+  </ion-card>
+
+
 
 </ion-content>

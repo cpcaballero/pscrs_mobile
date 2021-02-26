@@ -9,11 +9,14 @@ import { Router } from '@angular/router';
 
 export class DashboardPage implements OnInit {
 
+  background: any;
+
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
+    this.background = "../../../assets/system/images/background.png";
   }
 
   show_surgical() {

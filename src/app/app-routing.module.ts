@@ -4,19 +4,19 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'member/dashboard',
+    redirectTo: 'public/initial',
     pathMatch: 'full'
   },
   {
-    path: 'login',
+    path: 'public/login',
     loadChildren: () => import('./public/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'signup',
+    path: 'public/signup',
     loadChildren: () => import('./public/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
-    path: 'forgot',
+    path: 'public/forgot',
     loadChildren: () => import('./public/forgot/forgot.module').then( m => m.ForgotPageModule)
   },
   {
@@ -44,7 +44,7 @@ const routes: Routes = [
     loadChildren: () => import('./member/about-pscrs/about-pscrs.module').then( m => m.AboutPscrsPageModule)
   },
   {
-    path: 'member/contact-us',
+    path: 'public/contact-us',
     loadChildren: () => import('./public/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
   },
   {
@@ -52,12 +52,12 @@ const routes: Routes = [
     loadChildren: () => import('./public/faqs/faqs.module').then( m => m.FaqsPageModule)
   },
   {
-    path: 'initial',
+    path: 'public/initial',
     loadChildren: () => import('./public/initial/initial.module').then( m => m.InitialPageModule)
   },
   {
     path: 'member/experts',
-    loadChildren: () => import('./member/experts/experts.module').then( m => m.ExpertsPageModule)
+    loadChildren: () => import('./member/experts_module/experts/experts.module').then( m => m.ExpertsPageModule)
   },
   {
     path: 'member/profile-settings',
@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'member/connect',
     loadChildren: () => import('./member/connect/connect.module').then( m => m.ConnectPageModule)
+  },
+  {
+    path: 'member/expert-messages',
+    loadChildren: () => import('./member/experts_module/expert-messages/expert-messages.module').then( m => m.ExpertMessagesPageModule)
   }
 ];
 

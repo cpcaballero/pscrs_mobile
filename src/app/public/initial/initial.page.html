@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>initial</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="height:100vh;">
+  <div class="ion-margin">
 
-<ion-content>
+    <ion-grid fixed id="logo_grid">
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="4">
+          <img width="100%" src="/assets/system/images/about.png" alt="" />
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          Welcome to the PSCRS Mobile App for Opthalmologic Surgeons in the Philippines
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button class="ion-margin" fill="solid" color="primary" expand="block" (click)="show_login()">Member Log In
+          </ion-button>
+      
+          <ion-button class="ion-margin" fill="solid" color="primary" expand="block" (click)="show_signup()">Profile Registration
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 50px;">
+        <ion-col size="6">
+          <ion-button class="ion-margin-start" fill="solid" color="primary" expand="block" (click)="show_faqs()">FAQs
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="ion-margin-end" fill="solid" color="primary" expand="block" (click)="show_contact()">Contact Us
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
+  </div>
 
 </ion-content>
