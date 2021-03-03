@@ -1,0 +1,61 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false">
+        <ion-icon color="primary" src="./assets/system/icons/menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="show_profile()">
+        <ion-icon style="font-size: 2em;" color="primary" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="ios">
+      <img width="30em" src="./assets/icon/pscrs_logo.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <div class="ion-padding-start">
+    <ion-text>
+      <h3><strong>Contact Us</strong></h3>
+      <p>Address</p>
+      <p>Email</p>
+      <p>Hotline</p>
+    </ion-text>
+  </div>
+
+  <br><br>
+
+  <form [formGroup]="ContactForm" (ngSubmit)="contact()">
+
+    <ion-label position="stacked" class="ion-padding-start">Name</ion-label>
+    <ion-item class="ion-margin input-border">
+      <ion-input name="name" clear-input inputmode="text" formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-label position="stacked" class="ion-padding-start">Mobile Number</ion-label>
+    <ion-item class="ion-margin input-border">
+      <ion-input name="mobile_no" clear-input inputmode="text" formControlName="mobile_no"></ion-input>
+    </ion-item>
+
+    <ion-label position="stacked" class="ion-padding-start">Email</ion-label>
+    <ion-item class="ion-margin input-border">
+      <ion-input name="email" clear-input inputmode="email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-label position="stacked" class="ion-padding-start">Message</ion-label>
+    <ion-item class="ion-margin input-border">
+      <ion-textarea name="message" rows="8" clear-input inputmode="text" formControlName="message"></ion-textarea>
+    </ion-item>
+
+    <ion-button class="ion-margin" [disabled]="!ContactForm.valid" color="primary" type="submit" expand="block">
+      <ion-text color="light">SUBMIT</ion-text>
+    </ion-button>
+
+  </form>
+
+
+</ion-content>

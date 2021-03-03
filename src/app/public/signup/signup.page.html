@@ -1,9 +1,71 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <div *ngIf="!profile;else elseBlock">
+
+    <div class="ion-text-center">
+      <ion-text>
+        <h4 class="ion-margin-start" style="margin-bottom: 0px; padding-bottom:0px;">Member Registration</h4>
+      </ion-text>
+    </div>
+
+    <div>
+      <ion-label position="stacked" class="ion-padding-start">First Name</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">Last Name</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">Middle Name</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">Email</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="email" value=""></ion-input>
+        <!-- <ion-button color="primary" item-right>
+          <ion-text color="light">Change</ion-text>
+        </ion-button> -->
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">Contact Number</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">New Password</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="password" value=""></ion-input>
+      </ion-item>
+
+      <ion-label position="stacked" class="ion-padding-start">Re-enter New Password</ion-label>
+      <ion-item class="ion-margin input-border">
+        <ion-input disabled inputmode="password" value=""></ion-input>
+      </ion-item>
+
+      <div class="ion-padding-top">
+        <ion-row>
+          <ion-col class="ion-padding-start" size="6">
+            <ion-button expand="block">
+              <ion-text color="light">Register</ion-text>
+            </ion-button>
+          </ion-col>
+          <ion-col class="ion-padding-end" size="6">
+            <ion-button expand="block">
+              <ion-text (click)="show_login()" color="light">Login</ion-text>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </div>
+
+  </div>
+
+  <ng-template #elseBlock></ng-template>
 
 </ion-content>

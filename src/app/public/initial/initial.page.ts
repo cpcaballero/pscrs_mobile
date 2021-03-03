@@ -25,11 +25,11 @@ export class InitialPage implements OnInit {
   }
 
   show_faqs() {
-    this.router.navigateByUrl('faqs');
+    this.router.navigateByUrl('public/faqs');
   }
 
   show_contact() {
-    this.router.navigateByUrl('public/contact-us');
+    this.router.navigateByUrl('public/connect');
   }
 
 }

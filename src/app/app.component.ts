@@ -17,5 +17,10 @@ export class AppComponent {
     { title: 'Feedback & Suggestions', url: 'member/feedbacks', icon: 'mail' },
     { title: 'Connect with Us', url: 'member/connect', icon: 'mail' }
   ];
-  constructor() {}
+  public publicPages = [
+    { title: 'FAQs', url: 'public/faqs', icon: 'mail' },
+    { title: 'Terms and Conditions', url: 'public/terms', icon: 'mail' },
+    { title: 'Privacy Policy', url: 'public/privacy', icon: 'mail' }
+  ];
+  constructor() { }
 }
