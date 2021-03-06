@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -28,4 +28,8 @@
 .input-border {
     border: solid 1px black;
     border-radius: 10px;
+}
+
+.bg {
+    --background: url("data:image/png;base64,/src/assets/system/images/background.png") 0 0/100% 100% no-repeat;
 }
